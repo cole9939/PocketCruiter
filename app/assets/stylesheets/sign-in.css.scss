@@ -1,0 +1,54 @@
+@charset "utf-8";
+
+/* CSS Document */
+
+.main-container {
+  margin-top: 8%;
+}
+
+.outer-div {
+  background: none repeat scroll 0 0 #FFFFFF;
+  border-radius: 5px;
+  box-shadow: 0 0 9px #D3D3D3 inset;
+  margin: 0 auto;
+  padding: 50px 15px;
+  width: 50%;
+}
+
+.main-container form {
+  width: 70%;
+  margin: 0 auto;
+  h2 {
+    margin-bottom: 30px;
+  }
+  .form-group {
+    margin-bottom: 19px;
+  }
+}
+
+@media (min-width: 320px) and (max-width: 700px) {
+  .main-container {
+    margin-top: 24%;
+    form {
+      h2 {
+        font-size: 22px;
+      }
+      width: 90%;
+    }
+  }
+  .outer-div {
+    width: 80%;
+  }
+}
+
+@media (min-width: 701px) and (max-width: 1000px) {
+  .main-container {
+    form {
+      width: 60%;
+    }
+    margin-top: 15%;
+  }
+  .outer-div {
+    width: 80%;
+  }
+}

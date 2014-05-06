@@ -1,0 +1,14 @@
+<div class="row">
+  <div class="outer-div">
+    <div class="list-group">
+      <%= @template.description.html_safe %></br>
+      <hr>
+      <a href=<%= root_url %> class="left ">
+        Back
+      </a>
+      
+      <%= mail_to current_user.email, "USE TEMPLATE", subject: @template.title, body: @template.description.html_safe %>
+      
+    </div>
+  </div>
+</div>

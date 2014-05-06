@@ -1,0 +1,37 @@
+@charset "utf-8";
+
+/* header css */
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+a {
+  &:hover, &:focus {
+    outline: none;
+  }
+}
+
+.header {
+  background-color: #B84D45;
+  border-color: #A5423B;
+  box-shadow: 0 1px 0 rgba(255, 255, 255, 0.1);
+  .navbar-brand {
+    color: #fff;
+  }
+  .navbar-nav > li > a {
+    color: #fff;
+    &:hover, &:focus {
+      background-color: #A5423B;
+      color: #FFFFFF;
+    }
+  }
+  .navbar-toggle {
+    border: 1px solid #fff;
+    .icon-bar {
+      background: #fff;
+    }
+  }
+}

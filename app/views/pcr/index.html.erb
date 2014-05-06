@@ -1,0 +1,13 @@
+<div class="row">
+  <div class="outer-div">
+    <div class="list-group">
+     <a href="#" class="list-group-item active">
+        Email Templates
+      </a>
+      <hr>
+     <% @templates.each do |temp| %>
+      <%= render partial: "template", locals: { temp: temp } %>
+    <% end %>     
+    </div>
+  </div>
+</div>
