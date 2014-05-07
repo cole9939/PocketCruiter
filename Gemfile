@@ -42,3 +42,8 @@ gem 'devise'
 gem 'activeadmin', github: 'gregbell/active_admin'
 gem 'bootstrap-sass'
 gem 'active_admin_editor'
+
+group :production do
+     gem 'pg'
+     gem 'rails_12factor'
+end
