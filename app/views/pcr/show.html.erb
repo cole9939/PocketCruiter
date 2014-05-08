@@ -1,13 +1,16 @@
+<%= javascript_include_tag "pcr" %>
 <div class="row">
   <div class="outer-div">
     <div class="list-group">
-      <%= @template.description.html_safe %></br>
+      <div id = 'template_description'>
+        <%= @template.description.html_safe %></br>
+      </div>  
       <hr>
       <a href=<%= root_url %> class="left ">
         Back
       </a>
       
-      <%= mail_to current_user.email, "USE TEMPLATE", subject: @template.title, body: @template.description.html_safe %>
+      <%= mail_to current_user.email, "USE TEMPLATE", subject: @template.title, body: @template.description.html_safe, id:'mail_to' %>
       
     </div>
   </div>
